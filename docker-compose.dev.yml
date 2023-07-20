@@ -8,6 +8,7 @@ services:
     volumes:
       - ./:/usr/src/app
       - /usr/src/app/node_modules
+      - ./uploads:/usr/src/app/uploads
     ports:
       - 4000:4000
     command: npm run dev
